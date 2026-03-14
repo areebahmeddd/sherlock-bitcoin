@@ -1,5 +1,30 @@
+# binaries
+bin/
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# test artifacts
+*.test
+*.out
+
+# vendor
+vendor/
+
+# go workspace
+go.work
+go.work.sum
+
+# uncompressed fixtures (keep .gz originals)
 fixtures/*.dat
-node_modules/
-__pycache__/
-target/
+
+# environment
 .env
+
+# os / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

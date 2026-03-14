@@ -17,4 +17,17 @@ for gz in fixtures/*.dat.gz; do
   fi
 done
 
+# Build Go binaries
+echo "Building cli binary..."
+go build -o bin/cli ./cmd/cli/ || {
+  echo "ERROR: Failed to build cli binary" >&2
+  exit 1
+}
+
+echo "Building web binary..."
+go build -o bin/web ./cmd/web/ || {
+  echo "ERROR: Failed to build web binary" >&2
+  exit 1
+}
+
 echo "Setup complete"
