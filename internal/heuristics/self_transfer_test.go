@@ -29,3 +29,10 @@ func TestApplySelfTransfer_MultipleOutputs(t *testing.T) {
 		t.Error("SelfTransfer: mixed-type outputs should NOT be flagged")
 	}
 }
+
+func TestApplySelfTransfer_ManyInputs(t *testing.T) {
+	tc := makeTx(3, 1)
+	if got := ApplySelfTransfer(tc).Detected; got {
+		t.Error("SelfTransfer: >2 inputs should NOT be flagged")
+	}
+}

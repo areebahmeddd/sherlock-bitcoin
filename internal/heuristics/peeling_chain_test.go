@@ -22,3 +22,25 @@ func TestApplyPeelingChain_Detected(t *testing.T) {
 		t.Error("PeelingChain: 1-in 2-out with 90x ratio should be detected")
 	}
 }
+
+func TestApplyPeelingChain_EqualOutputs(t *testing.T) {
+	tx := wire.NewMsgTx(2)
+	tx.AddTxIn(wire.NewTxIn(&wire.OutPoint{}, nil, nil))
+	tx.AddTxOut(wire.NewTxOut(50_000, p2wpkhScript(10)))
+	tx.AddTxOut(wire.NewTxOut(50_000, p2wpkhScript(11)))
+
+	tc := &TxContext{
+		Tx:       tx,
+		PrevOuts: []blockfile.PrevOut{{Value: 100_000, ScriptPubKey: p2wpkhScript(0)}},
+	}
+	if got := ApplyPeelingChain(tc).Detected; got {
+		t.Error("PeelingChain: equal outputs should NOT be detected")
+	}
+}
+
+func TestApplyPeelingChain_MultipleInputs(t *testing.T) {
+	tc := makeTx(2, 2)
+	if got := ApplyPeelingChain(tc).Detected; got {
+		t.Error("PeelingChain: multi-input tx should NOT be detected")
+	}
+}
