@@ -151,6 +151,7 @@ func analyzeBlock(block *wire.MsgBlock, undo *blockfile.BlockUndo, includeTransa
 	br := BlockResult{
 		BlockHash:       blockHash,
 		BlockHeight:     height,
+		BlockTimestamp:  block.Header.Timestamp.Unix(),
 		TxCount:         len(block.Transactions),
 		AnalysisSummary: blockSummary,
 	}

@@ -3,6 +3,7 @@ package report
 import (
 	"fmt"
 	"strings"
+	"time"
 
 	"sherlock/internal/analysis"
 )
@@ -44,6 +45,10 @@ func Generate(r *analysis.Result) string {
 		sb.WriteString("| Field | Value |\n|-------|-------|\n")
 		sb.WriteString(fmt.Sprintf("| **Block Hash** | `%s` |\n", block.BlockHash))
 		sb.WriteString(fmt.Sprintf("| **Block Height** | %d |\n", block.BlockHeight))
+		if block.BlockTimestamp > 0 {
+			sb.WriteString(fmt.Sprintf("| **Timestamp** | %s (Unix: %d) |\n",
+				formatUnixTime(block.BlockTimestamp), block.BlockTimestamp))
+		}
 		sb.WriteString(fmt.Sprintf("| **Transaction Count** | %d |\n\n", block.TxCount))
 
 		sb.WriteString("### Fee Rate Stats (sat/vB)\n\n")
@@ -163,4 +168,8 @@ func alreadyIncluded(txs []analysis.TxResult, txid string) bool {
 		}
 	}
 	return false
+}
+
+func formatUnixTime(unix int64) string {
+	return time.Unix(unix, 0).UTC().Format("2006-01-02 15:04:05 UTC")
 }

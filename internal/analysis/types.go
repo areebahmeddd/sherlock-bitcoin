@@ -31,6 +31,7 @@ type FeeStats struct {
 type BlockResult struct {
 	BlockHash       string     `json:"block_hash"`
 	BlockHeight     int        `json:"block_height"`
+	BlockTimestamp  int64      `json:"block_timestamp"`
 	TxCount         int        `json:"tx_count"`
 	AnalysisSummary Summary    `json:"analysis_summary"`
 	Transactions    []TxResult `json:"transactions,omitempty"`
