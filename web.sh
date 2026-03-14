@@ -17,11 +17,17 @@ set -euo pipefail
 
 PORT="${PORT:-3000}"
 
-# TODO: Start your web server here, for example:
-#   exec node server.js
-#   exec python -m http.server "$PORT"
-#   exec cargo run --release -- --port "$PORT"
+SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
+BINARY="$SCRIPT_DIR/bin/web"
 
-echo "Error: Web visualizer is not yet implemented" >&2
-echo "Set up your web server to listen on port $PORT" >&2
-exit 1
+# Build the web binary if missing
+if [[ ! -f "$BINARY" ]]; then
+  cd "$SCRIPT_DIR" || exit 1
+  go build -o "$BINARY" ./cmd/web/ 2>&1 >&2 || {
+    echo '{"ok":false,"error":{"code":"BUILD_ERROR","message":"Failed to build web binary"}}' >&2
+    exit 1
+  }
+fi
+
+export PORT
+exec "$BINARY"
