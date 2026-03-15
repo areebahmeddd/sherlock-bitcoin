@@ -38,6 +38,7 @@
     {
       "block_hash": "0000000000000000000075a3f6e5fdb1993c1ad03b3cd8e033eeacfd63316e11",
       "block_height": 907139,
+      "block_timestamp": 1753459432,
       "tx_count": 3056,
       "analysis_summary": {
         "total_transactions_analyzed": 3056,
@@ -34630,7 +34631,10 @@
               "detected": true
             },
             "change_detection": {
-              "detected": false
+              "confidence": "high",
+              "detected": true,
+              "likely_change_index": 0,
+              "method": "script_type_match"
             },
             "cioh": {
               "detected": true
@@ -56051,7 +56055,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 2,
+              "likely_change_index": 1,
               "method": "script_type_match"
             },
             "cioh": {
@@ -67977,7 +67981,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 0,
+              "likely_change_index": 1,
               "method": "script_type_match"
             },
             "cioh": {
@@ -68154,7 +68158,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 1,
+              "likely_change_index": 0,
               "method": "script_type_match"
             },
             "cioh": {
@@ -68622,7 +68626,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 1,
+              "likely_change_index": 0,
               "method": "script_type_match"
             },
             "cioh": {
@@ -70650,7 +70654,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 1,
+              "likely_change_index": 0,
               "method": "script_type_match"
             },
             "cioh": {
@@ -74755,7 +74759,7 @@
             "change_detection": {
               "confidence": "high",
               "detected": true,
-              "likely_change_index": 0,
+              "likely_change_index": 1,
               "method": "script_type_match"
             },
             "cioh": {
@@ -99076,10 +99080,10 @@
               "detected": false
             },
             "self_transfer": {
-              "detected": false
+              "detected": true
             }
           },
-          "classification": "simple_payment"
+          "classification": "self_transfer"
         },
         {
           "txid": "c12c1fa14349e969ca8f6c6e728edee1e3a6627e6e72682b941241d300214bdf",
@@ -99109,10 +99113,10 @@
               "detected": false
             },
             "self_transfer": {
-              "detected": false
+              "detected": true
             }
           },
-          "classification": "simple_payment"
+          "classification": "self_transfer"
         },
         {
           "txid": "050631271b5ff5eacf371b6a85bdf9729ee328bb0dec926a8605b8e3b454d1e2",
@@ -106673,6 +106677,7 @@
     {
       "block_hash": "0000000000000000000057b3b8c86beb357f225e3d0402bb1d620f71cfc847b2",
       "block_height": 907163,
+      "block_timestamp": 1753472383,
       "tx_count": 3981,
       "analysis_summary": {
         "total_transactions_analyzed": 3981,
@@ -106708,6 +106713,7 @@
     {
       "block_hash": "0000000000000000000091a00c78db1709fcda19ade3aa219d236cb2353749fe",
       "block_height": 907155,
+      "block_timestamp": 1753466696,
       "tx_count": 3960,
       "analysis_summary": {
         "total_transactions_analyzed": 3960,
@@ -106743,6 +106749,7 @@
     {
       "block_hash": "000000000000000000020889ea22c15d7c74dd329db8a7e58ec798653d05b37f",
       "block_height": 907142,
+      "block_timestamp": 1753460160,
       "tx_count": 443,
       "analysis_summary": {
         "total_transactions_analyzed": 443,
@@ -106778,6 +106785,7 @@
     {
       "block_hash": "00000000000000000001c6ec635f239ddd638c23661ff739730b833b0b0cdb07",
       "block_height": 907141,
+      "block_timestamp": 1753460147,
       "tx_count": 1566,
       "analysis_summary": {
         "total_transactions_analyzed": 1566,
@@ -106814,6 +106822,7 @@
     {
       "block_hash": "00000000000000000001ce6e85caa9bc91a698e85b77c6b875e1b5984ec1db5d",
       "block_height": 907170,
+      "block_timestamp": 1753476306,
       "tx_count": 2966,
       "analysis_summary": {
         "total_transactions_analyzed": 2966,
@@ -106849,6 +106858,7 @@
     {
       "block_hash": "000000000000000000018e1ee0e668a27279ded3816a8075eaf0489438ba049c",
       "block_height": 907158,
+      "block_timestamp": 1753468385,
       "tx_count": 2711,
       "analysis_summary": {
         "total_transactions_analyzed": 2711,
@@ -106884,6 +106894,7 @@
     {
       "block_hash": "00000000000000000001634942d8a0410e1b38f49756b7fd078ecf436f0fbfe4",
       "block_height": 907154,
+      "block_timestamp": 1753466499,
       "tx_count": 3752,
       "analysis_summary": {
         "total_transactions_analyzed": 3752,
@@ -106919,6 +106930,7 @@
     {
       "block_hash": "0000000000000000000074298f91afa3644a47ed1e2f1a9e9692603e27dfdae7",
       "block_height": 907167,
+      "block_timestamp": 1753475145,
       "tx_count": 2930,
       "analysis_summary": {
         "total_transactions_analyzed": 2930,
@@ -106954,6 +106966,7 @@
     {
       "block_hash": "0000000000000000000018dd20562a601f8dafd5207663f4803da66119d6dc36",
       "block_height": 907112,
+      "block_timestamp": 1753444553,
       "tx_count": 3449,
       "analysis_summary": {
         "total_transactions_analyzed": 3449,
@@ -106989,6 +107002,7 @@
     {
       "block_hash": "000000000000000000015783954bc152771d5b1e61520a3c7c9c6e0821a342d0",
       "block_height": 907164,
+      "block_timestamp": 1753474106,
       "tx_count": 3826,
       "analysis_summary": {
         "total_transactions_analyzed": 3826,
@@ -107024,6 +107038,7 @@
     {
       "block_hash": "000000000000000000002591806596dcbebe67854f12fdb8040cc405fc77f8d4",
       "block_height": 907132,
+      "block_timestamp": 1753455815,
       "tx_count": 2848,
       "analysis_summary": {
         "total_transactions_analyzed": 2848,
@@ -107059,6 +107074,7 @@
     {
       "block_hash": "00000000000000000001345218e06d3fa91b5fd486ca85e6ca4b6ab4ebddfa20",
       "block_height": 907149,
+      "block_timestamp": 1753462330,
       "tx_count": 1056,
       "analysis_summary": {
         "total_transactions_analyzed": 1056,
@@ -107094,6 +107110,7 @@
     {
       "block_hash": "00000000000000000001f071ba228d38ddd0e9c4536f7fd622906899bb16b491",
       "block_height": 907161,
+      "block_timestamp": 1753470337,
       "tx_count": 2432,
       "analysis_summary": {
         "total_transactions_analyzed": 2432,
@@ -107130,6 +107147,7 @@
     {
       "block_hash": "000000000000000000002fa3a6a72e34baf68f9d612c0ceee7b4926a7a18b88a",
       "block_height": 907156,
+      "block_timestamp": 1753467657,
       "tx_count": 3977,
       "analysis_summary": {
         "total_transactions_analyzed": 3977,
@@ -107165,6 +107183,7 @@
     {
       "block_hash": "0000000000000000000082b29270c750e1f85c7cc352f0d69c684b7d480fee34",
       "block_height": 907177,
+      "block_timestamp": 1753478358,
       "tx_count": 2202,
       "analysis_summary": {
         "total_transactions_analyzed": 2202,
@@ -107200,6 +107219,7 @@
     {
       "block_hash": "0000000000000000000080d5414ad82a5b7e077677aa3461aca6e2c93d210285",
       "block_height": 907175,
+      "block_timestamp": 1753477869,
       "tx_count": 139,
       "analysis_summary": {
         "total_transactions_analyzed": 139,
@@ -107235,6 +107255,7 @@
     {
       "block_hash": "000000000000000000021712f9c4214e8afd0b3dd6866ff58c2e113e8e497b9c",
       "block_height": 907180,
+      "block_timestamp": 1753480755,
       "tx_count": 3021,
       "analysis_summary": {
         "total_transactions_analyzed": 3021,
@@ -107271,6 +107292,7 @@
     {
       "block_hash": "00000000000000000001f58f3bf367d4a1815dcb6e6125e97fc227c3098767bc",
       "block_height": 907162,
+      "block_timestamp": 1753471165,
       "tx_count": 3187,
       "analysis_summary": {
         "total_transactions_analyzed": 3187,
@@ -107306,6 +107328,7 @@
     {
       "block_hash": "00000000000000000000a83ed2cc206638efbff1de54b374edf9b27a2b6bfe65",
       "block_height": 907166,
+      "block_timestamp": 1753474689,
       "tx_count": 2942,
       "analysis_summary": {
         "total_transactions_analyzed": 2942,
@@ -107341,6 +107364,7 @@
     {
       "block_hash": "00000000000000000000394fe616fb6cbfa675bbc96220531000ad39b6a12493",
       "block_height": 907181,
+      "block_timestamp": 1753481013,
       "tx_count": 3088,
       "analysis_summary": {
         "total_transactions_analyzed": 3088,
@@ -107377,6 +107401,7 @@
     {
       "block_hash": "00000000000000000000cfe38a9ecc63e1b217785af07046a3bd9e33d93c3e27",
       "block_height": 907120,
+      "block_timestamp": 1753452304,
       "tx_count": 2175,
       "analysis_summary": {
         "total_transactions_analyzed": 2175,
@@ -107412,6 +107437,7 @@
     {
       "block_hash": "00000000000000000001bba003500766521c1f93fad4ca66bfaec4089d31878e",
       "block_height": 907172,
+      "block_timestamp": 1753477391,
       "tx_count": 3554,
       "analysis_summary": {
         "total_transactions_analyzed": 3554,
@@ -107447,6 +107473,7 @@
     {
       "block_hash": "00000000000000000001a593d1e0c729b7d5995cb6dd599b470c575f95710f3b",
       "block_height": 907168,
+      "block_timestamp": 1753475210,
       "tx_count": 2262,
       "analysis_summary": {
         "total_transactions_analyzed": 2262,
@@ -107483,6 +107510,7 @@
     {
       "block_hash": "000000000000000000007816c53bcfed665f449da7ff0b989f9c5c091d07e8bf",
       "block_height": 907186,
+      "block_timestamp": 1753484792,
       "tx_count": 2920,
       "analysis_summary": {
         "total_transactions_analyzed": 2920,
@@ -107518,6 +107546,7 @@
     {
       "block_hash": "000000000000000000013d1c4002436be4e7bee69a74072f483a010ebbb7f705",
       "block_height": 907171,
+      "block_timestamp": 1753477021,
       "tx_count": 2762,
       "analysis_summary": {
         "total_transactions_analyzed": 2762,
@@ -107553,6 +107582,7 @@
     {
       "block_hash": "00000000000000000000ebef7bc4d9a6f5f13dee681842124bd070c30bfd5af5",
       "block_height": 907169,
+      "block_timestamp": 1753475416,
       "tx_count": 1382,
       "analysis_summary": {
         "total_transactions_analyzed": 1382,
@@ -107588,6 +107618,7 @@
     {
       "block_hash": "000000000000000000008784613498e541405e7d7661faa46c642cc9ae902277",
       "block_height": 907174,
+      "block_timestamp": 1753477844,
       "tx_count": 627,
       "analysis_summary": {
         "total_transactions_analyzed": 627,
@@ -107623,6 +107654,7 @@
     {
       "block_hash": "00000000000000000001f7c06a236b60be837687099f776f7838ef77b3ee68bc",
       "block_height": 907187,
+      "block_timestamp": 1753485747,
       "tx_count": 3011,
       "analysis_summary": {
         "total_transactions_analyzed": 3011,
@@ -107658,6 +107690,7 @@
     {
       "block_hash": "00000000000000000000adb472c87a5b369bc1920459c41665052e69bf43dece",
       "block_height": 907179,
+      "block_timestamp": 1753480006,
       "tx_count": 2243,
       "analysis_summary": {
         "total_transactions_analyzed": 2243,
@@ -107694,6 +107727,7 @@
     {
       "block_hash": "000000000000000000016689a83ba3a69285f65cb6cbc4273279054e3a3af67b",
       "block_height": 907188,
+      "block_timestamp": 1753485825,
       "tx_count": 3293,
       "analysis_summary": {
         "total_transactions_analyzed": 3293,
@@ -107730,6 +107764,7 @@
     {
       "block_hash": "000000000000000000020cad25005a49d125abb3a26d7dd6a834c2578eb50d6c",
       "block_height": 907184,
+      "block_timestamp": 1753484138,
       "tx_count": 3682,
       "analysis_summary": {
         "total_transactions_analyzed": 3682,
@@ -107765,6 +107800,7 @@
     {
       "block_hash": "00000000000000000000a4b1cede1eba74d67df322ca415468f277aa7b508f47",
       "block_height": 907199,
+      "block_timestamp": 1753492177,
       "tx_count": 4425,
       "analysis_summary": {
         "total_transactions_analyzed": 4425,
@@ -107801,6 +107837,7 @@
     {
       "block_hash": "00000000000000000000f51b25ec47cc19c935ae8397941225704ebb7c3dacf0",
       "block_height": 907201,
+      "block_timestamp": 1753493124,
       "tx_count": 6,
       "analysis_summary": {
         "total_transactions_analyzed": 6,
@@ -107836,6 +107873,7 @@
     {
       "block_hash": "0000000000000000000114f790722e1190054c979260af659880cfcbb34793a3",
       "block_height": 907144,
+      "block_timestamp": 1753460679,
       "tx_count": 4376,
       "analysis_summary": {
         "total_transactions_analyzed": 4376,
@@ -107871,6 +107909,7 @@
     {
       "block_hash": "00000000000000000000334e1067c0840fe7aea5042e33d577f4ea2f25053ccc",
       "block_height": 907178,
+      "block_timestamp": 1753479639,
       "tx_count": 3349,
       "analysis_summary": {
         "total_transactions_analyzed": 3349,
@@ -107906,6 +107945,7 @@
     {
       "block_hash": "00000000000000000001de0bee49d22a48b5b60bb57f1665b672a3e72f2a6dca",
       "block_height": 907191,
+      "block_timestamp": 1753489469,
       "tx_count": 3723,
       "analysis_summary": {
         "total_transactions_analyzed": 3723,
@@ -107941,6 +107981,7 @@
     {
       "block_hash": "00000000000000000000ff0d4891e68cbfdd855050140eb359aec80231b6644d",
       "block_height": 907200,
+      "block_timestamp": 1753492589,
       "tx_count": 4532,
       "analysis_summary": {
         "total_transactions_analyzed": 4532,
@@ -107976,6 +108017,7 @@
     {
       "block_hash": "000000000000000000004856b729177bc7d142e8ae42f92af37d7be71039acf4",
       "block_height": 907153,
+      "block_timestamp": 1753463253,
       "tx_count": 3620,
       "analysis_summary": {
         "total_transactions_analyzed": 3620,
@@ -108011,6 +108053,7 @@
     {
       "block_hash": "000000000000000000018c308bf5a7c0d81515f2c56f01b0de8c134fc957ed7b",
       "block_height": 907195,
+      "block_timestamp": 1753490800,
       "tx_count": 4654,
       "analysis_summary": {
         "total_transactions_analyzed": 4654,
@@ -108046,6 +108089,7 @@
     {
       "block_hash": "000000000000000000018d4e3381b90a6b1c9d6c73ddf087bb6c635858e47042",
       "block_height": 907176,
+      "block_timestamp": 1753477939,
       "tx_count": 5095,
       "analysis_summary": {
         "total_transactions_analyzed": 5095,
@@ -108081,6 +108125,7 @@
     {
       "block_hash": "00000000000000000000174f7647adf67d461ed8cd3e59b144feb5796ee6775a",
       "block_height": 907190,
+      "block_timestamp": 1753486590,
       "tx_count": 2340,
       "analysis_summary": {
         "total_transactions_analyzed": 2340,
@@ -108116,6 +108161,7 @@
     {
       "block_hash": "000000000000000000019fe09be7a4430cd9e2ef3abcbdd264f6a477f6d9a733",
       "block_height": 907203,
+      "block_timestamp": 1753495229,
       "tx_count": 2995,
       "analysis_summary": {
         "total_transactions_analyzed": 2995,
@@ -108152,6 +108198,7 @@
     {
       "block_hash": "00000000000000000000ba6e7d9280e2d785d6c82aad5631367cd413c824ac1b",
       "block_height": 907204,
+      "block_timestamp": 1753495260,
       "tx_count": 5017,
       "analysis_summary": {
         "total_transactions_analyzed": 5017,
@@ -108188,6 +108235,7 @@
     {
       "block_hash": "00000000000000000001284bd54fc319fdb7fbc99808f4397773ffcae33f487e",
       "block_height": 907196,
+      "block_timestamp": 1753490974,
       "tx_count": 4486,
       "analysis_summary": {
         "total_transactions_analyzed": 4486,
@@ -108223,6 +108271,7 @@
     {
       "block_hash": "000000000000000000015ba1d6d2bd4aef87b88cd33a0f80b0adf993f1017448",
       "block_height": 907208,
+      "block_timestamp": 1753496917,
       "tx_count": 4174,
       "analysis_summary": {
         "total_transactions_analyzed": 4174,
@@ -108258,6 +108307,7 @@
     {
       "block_hash": "00000000000000000000f21de756a29dca40b2f052a86d587bbb1f8ec46a1dd0",
       "block_height": 907159,
+      "block_timestamp": 1753469112,
       "tx_count": 2982,
       "analysis_summary": {
         "total_transactions_analyzed": 2982,
@@ -108293,6 +108343,7 @@
     {
       "block_hash": "0000000000000000000230fd85a89b40c5470c7b6a33ac9355289fd5608e8312",
       "block_height": 907206,
+      "block_timestamp": 1753496175,
       "tx_count": 3734,
       "analysis_summary": {
         "total_transactions_analyzed": 3734,
@@ -108328,6 +108379,7 @@
     {
       "block_hash": "00000000000000000000917fdca84b1e7994e19e63d8b0afa0bac966b0d3a93c",
       "block_height": 907192,
+      "block_timestamp": 1753489867,
       "tx_count": 3138,
       "analysis_summary": {
         "total_transactions_analyzed": 3138,
@@ -108363,6 +108415,7 @@
     {
       "block_hash": "00000000000000000000c367bb4d7d1f8baff5ca259173797ae6084bbdeaee60",
       "block_height": 907157,
+      "block_timestamp": 1753467825,
       "tx_count": 3639,
       "analysis_summary": {
         "total_transactions_analyzed": 3639,
@@ -108398,6 +108451,7 @@
     {
       "block_hash": "00000000000000000000543a25302d20833a9afb91bed2018458945a12228e8b",
       "block_height": 907189,
+      "block_timestamp": 1753485959,
       "tx_count": 4464,
       "analysis_summary": {
         "total_transactions_analyzed": 4464,
@@ -108434,6 +108488,7 @@
     {
       "block_hash": "00000000000000000000c393f7659335ca7de773717644eff5639ad442dc49d8",
       "block_height": 907165,
+      "block_timestamp": 1753474147,
       "tx_count": 2418,
       "analysis_summary": {
         "total_transactions_analyzed": 2418,
@@ -108469,6 +108524,7 @@
     {
       "block_hash": "00000000000000000001f63c070dc161235564b53af28392d7d0b19f4ce67487",
       "block_height": 907211,
+      "block_timestamp": 1753499666,
       "tx_count": 3780,
       "analysis_summary": {
         "total_transactions_analyzed": 3780,
@@ -108504,6 +108560,7 @@
     {
       "block_hash": "00000000000000000001bc0f94834c5231e0fc6ee0f8530eafc112b7051c7f72",
       "block_height": 907217,
+      "block_timestamp": 1753503941,
       "tx_count": 4869,
       "analysis_summary": {
         "total_transactions_analyzed": 4869,
@@ -108540,6 +108597,7 @@
     {
       "block_hash": "00000000000000000000086a84d1e079444417af97475cc4a800d9b53628abe8",
       "block_height": 907198,
+      "block_timestamp": 1753492169,
       "tx_count": 3177,
       "analysis_summary": {
         "total_transactions_analyzed": 3177,
@@ -108575,6 +108633,7 @@
     {
       "block_hash": "00000000000000000001dbc6fb03e922ad59646f859fbcb4cb6663b94474116b",
       "block_height": 907215,
+      "block_timestamp": 1753503138,
       "tx_count": 3863,
       "analysis_summary": {
         "total_transactions_analyzed": 3863,
@@ -108610,6 +108669,7 @@
     {
       "block_hash": "0000000000000000000100bf521d978db63a1e6695f382c413eda4378dfccac7",
       "block_height": 907202,
+      "block_timestamp": 1753495171,
       "tx_count": 3692,
       "analysis_summary": {
         "total_transactions_analyzed": 3692,
@@ -108646,6 +108706,7 @@
     {
       "block_hash": "00000000000000000000754a5a8b23924b1d7e9d86ad08212382b9b2d96a2a9d",
       "block_height": 907212,
+      "block_timestamp": 1753502004,
       "tx_count": 3293,
       "analysis_summary": {
         "total_transactions_analyzed": 3293,
@@ -108681,6 +108742,7 @@
     {
       "block_hash": "000000000000000000002cd9b9d87e0f952445cb6a85833f9200a29012b13a28",
       "block_height": 907216,
+      "block_timestamp": 1753503742,
       "tx_count": 4384,
       "analysis_summary": {
         "total_transactions_analyzed": 4384,
@@ -108717,6 +108779,7 @@
     {
       "block_hash": "0000000000000000000180177d56f748b43eaf879a69250128180b47b2a51cb0",
       "block_height": 907225,
+      "block_timestamp": 1753508802,
       "tx_count": 3808,
       "analysis_summary": {
         "total_transactions_analyzed": 3808,
@@ -108753,6 +108816,7 @@
     {
       "block_hash": "00000000000000000001fd4187672d1c3d2048c810381c3178b1b1965d4319c7",
       "block_height": 907194,
+      "block_timestamp": 1753490557,
       "tx_count": 3645,
       "analysis_summary": {
         "total_transactions_analyzed": 3645,
@@ -108788,6 +108852,7 @@
     {
       "block_hash": "00000000000000000001617b4e601e2c0f56327a0cad5ca9783020c4005757ce",
       "block_height": 907223,
+      "block_timestamp": 1753507778,
       "tx_count": 4671,
       "analysis_summary": {
         "total_transactions_analyzed": 4671,
@@ -108824,6 +108889,7 @@
     {
       "block_hash": "00000000000000000000ef47adfd64789a78fa10176bfe2a12780ab017939628",
       "block_height": 907173,
+      "block_timestamp": 1753477750,
       "tx_count": 3248,
       "analysis_summary": {
         "total_transactions_analyzed": 3248,
@@ -108859,6 +108925,7 @@
     {
       "block_hash": "000000000000000000011fb30597f2c6a38bd750f9b03d2dc3a654a95a4278bb",
       "block_height": 907207,
+      "block_timestamp": 1753496417,
       "tx_count": 4645,
       "analysis_summary": {
         "total_transactions_analyzed": 4645,
@@ -108894,6 +108961,7 @@
     {
       "block_hash": "00000000000000000001b817da306ae133f9a76dd7ca3fcff96f9c3f17638373",
       "block_height": 907214,
+      "block_timestamp": 1753502586,
       "tx_count": 3404,
       "analysis_summary": {
         "total_transactions_analyzed": 3404,
@@ -108930,6 +108998,7 @@
     {
       "block_hash": "00000000000000000000320ad7ef961830c6c12c8dfcef824bf50b0f7eabb521",
       "block_height": 907218,
+      "block_timestamp": 1753503959,
       "tx_count": 4346,
       "analysis_summary": {
         "total_transactions_analyzed": 4346,
@@ -108966,6 +109035,7 @@
     {
       "block_hash": "00000000000000000000b9ca710a2d6c958492c78c4592a7190a5811d92a7718",
       "block_height": 907220,
+      "block_timestamp": 1753505421,
       "tx_count": 4226,
       "analysis_summary": {
         "total_transactions_analyzed": 4226,
@@ -109002,6 +109072,7 @@
     {
       "block_hash": "000000000000000000013c7dea3e939ab1e67c7ec7e15e8a677f1acf6e4adabf",
       "block_height": 907226,
+      "block_timestamp": 1753509073,
       "tx_count": 3887,
       "analysis_summary": {
         "total_transactions_analyzed": 3887,
@@ -109038,6 +109109,7 @@
     {
       "block_hash": "0000000000000000000069fcdb9852550a9b9ddea5e6b022642d79a44febd7e4",
       "block_height": 907209,
+      "block_timestamp": 1753498761,
       "tx_count": 2320,
       "analysis_summary": {
         "total_transactions_analyzed": 2320,
@@ -109074,6 +109146,7 @@
     {
       "block_hash": "00000000000000000000f03e484ef1ea78ece74f703fda501cef67447fd68949",
       "block_height": 907227,
+      "block_timestamp": 1753510184,
       "tx_count": 4541,
       "analysis_summary": {
         "total_transactions_analyzed": 4541,
@@ -109109,6 +109182,7 @@
     {
       "block_hash": "00000000000000000000f49f1a07ddaf9689e8a3a7a4f623ab4bea41d16135d1",
       "block_height": 907234,
+      "block_timestamp": 1753512256,
       "tx_count": 4861,
       "analysis_summary": {
         "total_transactions_analyzed": 4861,
@@ -109144,6 +109218,7 @@
     {
       "block_hash": "00000000000000000001434579b1044e516832a3de74a7e791e0c499c7d09919",
       "block_height": 907228,
+      "block_timestamp": 1753510391,
       "tx_count": 4684,
       "analysis_summary": {
         "total_transactions_analyzed": 4684,
@@ -109179,6 +109254,7 @@
     {
       "block_hash": "0000000000000000000197aaca42bfe93c9f418d79511ea51d3f54e2ada6bc49",
       "block_height": 907232,
+      "block_timestamp": 1753511547,
       "tx_count": 4690,
       "analysis_summary": {
         "total_transactions_analyzed": 4690,
@@ -109215,6 +109291,7 @@
     {
       "block_hash": "00000000000000000000f2aca80f5aa34d525a9545fcce6a64e88e83b88aabcc",
       "block_height": 907182,
+      "block_timestamp": 1753481029,
       "tx_count": 46,
       "analysis_summary": {
         "total_transactions_analyzed": 46,
@@ -109250,6 +109327,7 @@
     {
       "block_hash": "000000000000000000002bab4fbe34e9f2bceda93f051eaf92d049f69718ebc5",
       "block_height": 907183,
+      "block_timestamp": 1753482143,
       "tx_count": 2522,
       "analysis_summary": {
         "total_transactions_analyzed": 2522,
@@ -109285,6 +109363,7 @@
     {
       "block_hash": "0000000000000000000161ec7ca3d8c99f97297d9d0b11f5bdb8b19c46d3b345",
       "block_height": 907213,
+      "block_timestamp": 1753502358,
       "tx_count": 3240,
       "analysis_summary": {
         "total_transactions_analyzed": 3240,
@@ -109321,6 +109400,7 @@
     {
       "block_hash": "000000000000000000012a3b3deb717bd6a0d34da1630cb2df192a4fd07eff8f",
       "block_height": 907230,
+      "block_timestamp": 1753511227,
       "tx_count": 3661,
       "analysis_summary": {
         "total_transactions_analyzed": 3661,
@@ -109356,6 +109436,7 @@
     {
       "block_hash": "00000000000000000001b99fbf9d256174a28bf7e2fc351957a881501da2f10e",
       "block_height": 907233,
+      "block_timestamp": 1753512073,
       "tx_count": 4410,
       "analysis_summary": {
         "total_transactions_analyzed": 4410,
