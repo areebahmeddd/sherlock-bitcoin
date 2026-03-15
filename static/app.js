@@ -662,7 +662,6 @@
     );
     const txs = Array.isArray(txData.transactions) ? txData.transactions : [];
     state.currentTransactions = txs;
-    buildHeuristicPills(txs);
     renderTransactionsTable();
   }
 
@@ -733,21 +732,20 @@
     renderTransactionsTable();
   }
 
-  function buildHeuristicPills(transactions) {
-    const heuristicIds = new Set();
-    transactions.forEach((tx) => {
-      if (tx.heuristics) {
-        Object.keys(tx.heuristics).forEach((id) => heuristicIds.add(id));
-      }
-    });
+  const ALL_HEURISTIC_IDS = [
+    "address_reuse",
+    "change_detection",
+    "cioh",
+    "coinjoin",
+    "consolidation",
+    "op_return",
+    "peeling_chain",
+    "round_number_payment",
+    "self_transfer",
+  ];
 
-    if (heuristicIds.size === 0) {
-      heuristicFilters.hidden = true;
-      return;
-    }
-
+  function buildHeuristicPills() {
     heuristicFilterPills.innerHTML = "";
-    state.currentHeuristicFilter = "";
 
     const allBtn = document.createElement("button");
     allBtn.type = "button";
@@ -756,7 +754,7 @@
     allBtn.textContent = "All";
     heuristicFilterPills.appendChild(allBtn);
 
-    [...heuristicIds].sort().forEach((id) => {
+    ALL_HEURISTIC_IDS.forEach((id) => {
       const btn = document.createElement("button");
       btn.type = "button";
       btn.setAttribute("data-heuristic", id);
@@ -765,14 +763,15 @@
       btn.textContent = id;
       heuristicFilterPills.appendChild(btn);
     });
-
-    heuristicFilters.hidden = false;
   }
 
   function clearHeuristicPills() {
-    heuristicFilters.hidden = true;
-    heuristicFilterPills.innerHTML = "";
     state.currentHeuristicFilter = "";
+    Array.from(
+      heuristicFilterPills.querySelectorAll("button[data-heuristic]"),
+    ).forEach((b) => {
+      b.classList.toggle("pill-active", b.getAttribute("data-heuristic") === "");
+    });
   }
 
   function onHeuristicFilterClick(evt) {
@@ -801,6 +800,7 @@
   }
 
   async function init() {
+    buildHeuristicPills();
     await loadBlockList();
     renderTransactionsTable();
     renderBlockSummary(null);
