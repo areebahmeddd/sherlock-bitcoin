@@ -67,7 +67,7 @@ Transactions with round-number outputs are often flagged because they typically 
 ## System Architecture
 
 <p align="center">
-  <img src="static/assets/diagram.png" alt="Architecture Diagram" width="720" />
+  <img src="docs/assets/diagram.png" alt="Architecture Diagram" width="720" />
 </p>
 
 ## Trade-offs and Design Decisions
